@@ -1,0 +1,146 @@
+* {
+    font-family: Arial;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to top, #e86c6c, #f3cac8);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-block-start: 0.5rem;
+    margin-block-end: 0;
+}
+/* 
+.emptyInputNotice{
+
+} */
+.emptyInputNotice2 {
+    color: #fb0e0e;
+    font-style: italic;
+    margin: -0.05rem 0 0 0;
+    font-size: 0.8rem;
+
+    animation: pulsate 0.3s 2 alternate;
+    /*default
+    opacity: 1; */
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+button {
+    background-color: #f6f1f1;
+    font-size: 1.5rem;
+    inline-size: 4rem;
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+    border: 0.1rem solid #b0adad;
+    margin: 0.1rem;
+}
+
+button:hover,
+button:focus {
+    background-color: #e2dcdc;
+    border-color: #b0aaaa;
+}
+
+input {
+    inline-size: 50%;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    line-height: 1.5rem;
+    margin-inline: 0.1rem;
+    border: 0.1rem solid #b0adad;
+}
+
+input:focus {
+    border: none;
+    outline: 0.1rem solid blue;
+}
+
+#div1 {
+    background-color: white;
+    inline-size: 30%;
+    margin: -1rem auto;
+    padding: 0 0 0.8rem 0;
+
+    /*box shadow: X, Y, blur-radius (intensivity: the more - the lessintensive, color rgba, last - transparency*/
+    box-shadow: 0 0 0.5rem #5f303080;
+    animation: div-bounce 1s;
+}
+
+@keyframes div-bounce {
+    0% {
+        transform: translateY(-5rem);
+    }
+
+    50% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        transform: none;
+        /*transform: none; same as 
+        transform: translateY(0);*/
+    }
+}
+
+
+#completedScoreNotice {
+    font-size: 0.8rem;
+    color: black;
+}
+
+span.trashbin svg {
+    inline-size: 1rem;
+    block-size: 1rem;
+    margin-inline-start: 0.5rem;
+    fill: #b0adad;
+}
+
+ul {
+    list-style: none;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+li {
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    animation: li-up 0.5s;
+}
+
+@keyframes li-up {
+    from {
+        transform: translateY(1.5rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.completed {
+    color: #b0adad;
+    text-decoration: line-through;
+    transition: 1s ease-out;
+}
