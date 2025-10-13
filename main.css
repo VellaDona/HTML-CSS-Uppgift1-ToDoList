@@ -52,7 +52,7 @@ button {
     padding: 0.1rem;
     border: 0.1rem solid #b0adad;
     margin: 0.1rem;
-}
+} 
 
 button:hover,
 button:focus {
@@ -80,7 +80,7 @@ input:focus {
     margin: -1rem auto;
     padding: 0 0 0.8rem 0;
 
-    /*box shadow: X, Y, blur-radius (intensivity: the more - the lessintensive, color rgba, last - transparency*/
+    /*box shadow: X, Y, blur-radius (intensivity: the more - the less intensive, color rgba, last - transparency*/
     box-shadow: 0 0 0.5rem #5f303080;
     animation: div-bounce 1s;
 }
