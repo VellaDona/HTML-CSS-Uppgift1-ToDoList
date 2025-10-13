@@ -33,8 +33,7 @@ function allThatHappens() {
       inputTask.focus();
       return;
    }
-   //reset class to show animation next time the input is empty
-   emptyInputNotice.setAttribute("class","emptyInputNotice");
+
    //emptyInputNotice dissappears if input isn't empty
    emptyInputNotice.textContent = "";
 
